@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 public class WebController {
     @RequestMapping(value = "/index")
     public String index(Model model) {
-        char[] character = new char[] {'X', 'X', 'O', 'O', 'X', '0', 'X', 'O', 'X'};
+        char[] character = new char[] {'X', 'X', 'O', 'O', 'X', 'O', 'X', 'O', 'X'};
         model.addAttribute("variable1", character[0]);
         model.addAttribute("variable2", character[1]);
         model.addAttribute("variable3", character[2]);
